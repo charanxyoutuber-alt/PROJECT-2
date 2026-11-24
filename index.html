@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloce Labs — Next-Generation Workflow Automation</title>
+  <meta name="description" content="Veloce Labs empowers engineering and product teams to automate complex cloud workflows at the speed of thought with enterprise-grade reliability and AI agents.">
+  <meta name="keywords" content="workflow automation, AI agents, cloud orchestration, enterprise software, developer tools">
+  <meta name="theme-color" content="#090D16">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Veloce Labs — Next-Gen Workflow Automation">
+  <meta property="og:description" content="Automate mission-critical cloud workflows with deterministic AI agents, sub-millisecond edge orchestration, and real-time observability.">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       STICKY GLASSMORPHIC NAVBAR
+       ========================================================================= -->
+  <header class="navbar-wrapper" id="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Veloce Labs Home">
+        <div class="logo-mark">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="8" fill="url(#logo-grad)"/>
+            <path d="M7 8.5L14 19.5L21 8.5" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 8.5L14 13.5L17 8.5" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4F46E5"/>
+                <stop offset="1" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="brand-text">Veloce <span class="brand-text-accent">Labs</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#team" class="nav-link">Team</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-cta-wrapper">
+          <a href="#contact" class="btn btn-primary btn-sm mobile-cta">Get Started Free</a>
+        </div>
+      </nav>
+
+      <!-- Right Action CTA -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm desktop-only">Get Started</a>
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION (Deep Dark Mode #090D16)
+         ========================================================================= -->
+    <section class="hero-section" id="hero">
+      <!-- Ambient Radial Mesh Glow & Subtle Pattern -->
+      <div class="hero-bg-glow glow-indigo" aria-hidden="true"></div>
+      <div class="hero-bg-glow glow-cyan" aria-hidden="true"></div>
+      <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Hero Copy -->
+        <div class="hero-content">
+          <!-- Announcement Badge -->
+          <div class="announcement-badge">
+            <span class="badge-icon">✨</span>
+            <span class="badge-text">Introducing Veloce Engine 2.0</span>
+            <span class="badge-arrow">→</span>
+          </div>
+
+          <!-- Mission Headline -->
+          <h1 class="hero-title">
+            Automate complex workflows at the <span class="gradient-text">speed of thought</span>
+          </h1>
+
+          <!-- Value Proposition -->
+          <p class="hero-subtitle">
+            Orchestrate deterministic AI agents, event pipelines, and cloud microservices with sub-millisecond precision. Built for modern high-velocity engineering organizations.
+          </p>
+
+          <!-- Dual CTAs -->
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>Get Started Free</span>
+              <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3.33334 8H12.6667M12.6667 8L8.66668 4M12.6667 8L8.66668 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#products" class="btn btn-ghost btn-lg">
+              <span>Explore Products</span>
+            </a>
+          </div>
+
+          <!-- Hero Micro Trust Stats -->
+          <div class="hero-trust">
+            <div class="trust-avatars">
+              <span class="avatar-ring" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80')"></span>
+              <span class="avatar-ring" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80')"></span>
+              <span class="avatar-ring" style="background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80')"></span>
+              <span class="avatar-ring" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80')"></span>
+            </div>
+            <div class="trust-caption">
+              <div class="trust-rating">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                <strong>4.9 / 5</strong>
+              </div>
+              <span class="trust-sub">Trusted by 10,000+ forward-thinking developers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- High-Fidelity Interactive Preview Card / Engine UI Mockup -->
+        <div class="hero-visual">
+          <div class="hero-mockup-card">
+            <!-- Terminal Header -->
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-amber"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="mockup-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+                <span>veloce-workflow-pipeline.yaml</span>
+              </div>
+              <div class="mockup-status">
+                <span class="pulse-indicator"></span>
+                <span>Active 0.42ms</span>
+              </div>
+            </div>
+
+            <!-- Terminal Pipeline Body -->
+            <div class="mockup-body">
+              <!-- Node 1: Ingestion -->
+              <div class="pipeline-node node-success">
+                <div class="node-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                  </svg>
+                </div>
+                <div class="node-info">
+                  <div class="node-meta">
+                    <span class="node-tag">Trigger</span>
+                    <span class="node-time">0.08ms</span>
+                  </div>
+                  <h4 class="node-name">CloudEvent.WebhookIngest</h4>
+                  <p class="node-desc">Kafka cluster stream partitioned across 12 regions</p>
+                </div>
+                <span class="node-badge">Passed</span>
+              </div>
+
+              <!-- Connector Line -->
+              <div class="pipeline-connector">
+                <div class="connector-line"></div>
+                <span class="connector-glow"></span>
+              </div>
+
+              <!-- Node 2: Cognitive Agent -->
+              <div class="pipeline-node node-active">
+                <div class="node-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a8 8 0 0 0-8 8c0 3.36 2.08 6.23 5.03 7.37.33.13.57.42.57.77v1.86a2 2 0 0 0 2 2h.8a2 2 0 0 0 2-2v-1.86c0-.35.24-.64.57-.77A8.002 8.002 0 0 0 12 2z"/>
+                  </svg>
+                </div>
+                <div class="node-info">
+                  <div class="node-meta">
+                    <span class="node-tag">AI Agent</span>
+                    <span class="node-time">0.24ms</span>
+                  </div>
+                  <h4 class="node-name">Veloce.CognitiveReasoning</h4>
+                  <p class="node-desc">Schema validation & intelligent anomaly remediation</p>
+                </div>
+                <span class="node-badge node-badge-live">Processing</span>
+              </div>
+
+              <!-- Connector Line -->
+              <div class="pipeline-connector">
+                <div class="connector-line"></div>
+              </div>
+
+              <!-- Node 3: Microservice Deployment -->
+              <div class="pipeline-node node-ready">
+                <div class="node-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                    <line x1="6" y1="6" x2="6.01" y2="6"/>
+                    <line x1="6" y1="18" x2="6.01" y2="18"/>
+                  </svg>
+                </div>
+                <div class="node-info">
+                  <div class="node-meta">
+                    <span class="node-tag">Edge Action</span>
+                    <span class="node-time">Queued</span>
+                  </div>
+                  <h4 class="node-name">AutoRemediate.MultiCloud</h4>
+                  <p class="node-desc">Sync state to AWS, GCP & Kubernetes clusters</p>
+                </div>
+                <span class="node-badge">Ready</span>
+              </div>
+            </div>
+
+            <!-- Terminal Metric Bar Footer -->
+            <div class="mockup-footer">
+              <div class="metric-item">
+                <span class="metric-label">Execution Latency</span>
+                <span class="metric-val">0.38 ms</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Memory Footprint</span>
+                <span class="metric-val">14.2 MB</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Zero Fault Tolerance</span>
+                <span class="metric-val text-cyan">100% Guarded</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PRODUCTS & SERVICES SECTION (3-Column Feature Grid on #F8FAFC)
+         ========================================================================= -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="section-tag">PRODUCTS & ARCHITECTURE</div>
+          <h2 class="section-title">Built for resilience. Engineered for massive scale.</h2>
+          <p class="section-subtitle">
+            Deploy self-healing workflow orchestrations without sacrificing developer control, type safety, or security protocols.
+          </p>
+        </div>
+
+        <!-- 3-Column Grid -->
+        <div class="products-grid">
+          <!-- Card 1: Veloce Flow -->
+          <article class="product-card">
+            <div class="product-icon-badge badge-indigo">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Veloce Flow</h3>
+            <p class="product-desc">
+              High-throughput event orchestrator capable of chaining hundreds of synchronous and asynchronous microservices with zero cold-starts.
+            </p>
+            <ul class="capability-list">
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Sub-millisecond event scheduling</span>
+              </li>
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Zero-downtime hot state migration</span>
+              </li>
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Native TypeScript & Go SDKs</span>
+              </li>
+            </ul>
+            <div class="card-footer-action">
+              <a href="#contact" class="card-link">
+                <span>Learn more</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Veloce Cognitive -->
+          <article class="product-card featured-product">
+            <div class="featured-ribbon">Most Popular</div>
+            <div class="product-icon-badge badge-cyan">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Veloce Cognitive</h3>
+            <p class="product-desc">
+              Context-aware autonomous agents that parse unstructured telemetry, diagnose failures, and apply verified auto-remediation policies.
+            </p>
+            <ul class="capability-list">
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Deterministic guardrails & audits</span>
+              </li>
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Private VPC / On-prem LLM runtime</span>
+              </li>
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Automated PR generation & fixes</span>
+              </li>
+            </ul>
+            <div class="card-footer-action">
+              <a href="#contact" class="card-link">
+                <span>Learn more</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Veloce Pulse -->
+          <article class="product-card">
+            <div class="product-icon-badge badge-slate">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+                <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+              </svg>
+            </div>
+            <h3 class="product-title">Veloce Pulse</h3>
+            <p class="product-desc">
+              Full-fidelity distributed telemetry engine giving SREs and engineering leaders granular visibility into pipeline costs and latency.
+            </p>
+            <ul class="capability-list">
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Distributed OpenTelemetry tracing</span>
+              </li>
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Automated SLA & MTTR analytics</span>
+              </li>
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>SOC2 Type II & HIPAA compliance</span>
+              </li>
+            </ul>
+            <div class="card-footer-action">
+              <a href="#contact" class="card-link">
+                <span>Learn more</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         ACHIEVEMENTS STATS BAR (High-Contrast Horizontal Banner on #090D16)
+         ========================================================================= -->
+    <section class="achievements-section" id="achievements">
+      <div class="container">
+        <div class="achievements-bar">
+          <!-- Stat 1 -->
+          <div class="stat-col">
+            <div class="stat-value">10K<span class="stat-accent">+</span></div>
+            <div class="stat-label">Active Engineering Teams</div>
+            <div class="stat-sub">Across 40+ countries</div>
+          </div>
+
+          <div class="stat-divider" aria-hidden="true"></div>
+
+          <!-- Stat 2 -->
+          <div class="stat-col">
+            <div class="stat-value">99.99<span class="stat-accent">%</span></div>
+            <div class="stat-label">Guaranteed Uptime SLA</div>
+            <div class="stat-sub">Enterprise multi-region</div>
+          </div>
+
+          <div class="stat-divider" aria-hidden="true"></div>
+
+          <!-- Stat 3 -->
+          <div class="stat-col">
+            <div class="stat-value">4.2M<span class="stat-accent">+</span></div>
+            <div class="stat-label">Daily Automations</div>
+            <div class="stat-sub">Zero pipeline bottlenecks</div>
+          </div>
+
+          <div class="stat-divider" aria-hidden="true"></div>
+
+          <!-- Stat 4 -->
+          <div class="stat-col">
+            <div class="stat-value">4.9<span class="stat-accent">/5</span></div>
+            <div class="stat-label">G2 & Gartner Rating</div>
+            <div class="stat-sub">From 1,200+ peer reviews</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         LEADERSHIP TEAM SECTION (Crisp White #FFFFFF Surface)
+         ========================================================================= -->
+    <section class="team-section" id="team">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="section-tag">LEADERSHIP & EXPERTISE</div>
+          <h2 class="section-title">Built by veterans of distributed systems</h2>
+          <p class="section-subtitle">
+            Our founding leadership brings decades of deep systems architecture experience from Google Cloud, AWS, Stripe, and HashiCorp.
+          </p>
+        </div>
+
+        <!-- 4-Column Responsive Grid -->
+        <div class="team-grid">
+          <!-- Member 1 -->
+          <article class="team-card">
+            <div class="team-avatar-frame">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=360&h=360&q=80" alt="Elena Rostova" class="team-avatar-img" loading="lazy">
+              <div class="avatar-ring-border"></div>
+            </div>
+            <h3 class="team-name">Elena Rostova</h3>
+            <p class="team-role">Founder & Chief Executive Officer</p>
+            <p class="team-bio">Former VP of Infrastructure at CloudScale. Led distributed compute clusters processing 20B+ events daily.</p>
+            <div class="team-socials">
+              <a href="#" class="social-btn" aria-label="LinkedIn profile of Elena Rostova">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="X Twitter profile of Elena Rostova">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="GitHub profile of Elena Rostova">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Member 2 -->
+          <article class="team-card">
+            <div class="team-avatar-frame">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=360&h=360&q=80" alt="Marcus Chen" class="team-avatar-img" loading="lazy">
+              <div class="avatar-ring-border"></div>
+            </div>
+            <h3 class="team-name">Marcus Chen</h3>
+            <p class="team-role">Co-Founder & Chief Technology Officer</p>
+            <p class="team-bio">Creator of open-source event engines. Ph.D. in High-Performance Computing from Stanford University.</p>
+            <div class="team-socials">
+              <a href="#" class="social-btn" aria-label="LinkedIn profile of Marcus Chen">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="X Twitter profile of Marcus Chen">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="GitHub profile of Marcus Chen">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Member 3 -->
+          <article class="team-card">
+            <div class="team-avatar-frame">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=360&h=360&q=80" alt="Sophia Patel" class="team-avatar-img" loading="lazy">
+              <div class="avatar-ring-border"></div>
+            </div>
+            <h3 class="team-name">Sophia Patel</h3>
+            <p class="team-role">Head of Engineering</p>
+            <p class="team-bio">Pioneered zero-trust policy frameworks and deterministic AI sandboxes. Ex-Staff Architect at Datadog.</p>
+            <div class="team-socials">
+              <a href="#" class="social-btn" aria-label="LinkedIn profile of Sophia Patel">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="X Twitter profile of Sophia Patel">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="GitHub profile of Sophia Patel">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Member 4 -->
+          <article class="team-card">
+            <div class="team-avatar-frame">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=360&h=360&q=80" alt="David Vance" class="team-avatar-img" loading="lazy">
+              <div class="avatar-ring-border"></div>
+            </div>
+            <h3 class="team-name">David Vance</h3>
+            <p class="team-role">Lead Product Designer</p>
+            <p class="team-bio">Obsessed with developer ergonomics and minimalist design systems. Previously crafted interface languages at Figma.</p>
+            <div class="team-socials">
+              <a href="#" class="social-btn" aria-label="LinkedIn profile of David Vance">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="X Twitter profile of David Vance">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="GitHub profile of David Vance">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         MODERN CONTACT SECTION (Balanced 2-Column Split on #F8FAFC)
+         ========================================================================= -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-split-grid">
+          <!-- Left Column: Direct Invitation & Info -->
+          <div class="contact-info-col">
+            <div class="section-tag">GET IN TOUCH</div>
+            <h2 class="contact-headline">Accelerate your team's velocity today.</h2>
+            <p class="contact-lead">
+              Whether you are automating a single mission-critical data pipeline or architecting an enterprise-wide agentic mesh, our principal architects are ready to assist.
+            </p>
+
+            <!-- Quick Response Badge -->
+            <div class="response-time-badge">
+              <span class="response-pulse"></span>
+              <span class="response-text">Average reply under 2 hours</span>
+            </div>
+
+            <!-- Detail Items -->
+            <div class="contact-meta-list">
+              <div class="meta-item">
+                <div class="meta-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="meta-content">
+                  <span class="meta-label">Global Headquarters</span>
+                  <span class="meta-value">555 Mission Street, Suite 2400<br>San Francisco, CA 94105</span>
+                </div>
+              </div>
+
+              <div class="meta-item">
+                <div class="meta-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div class="meta-content">
+                  <span class="meta-label">Direct Engineering Support</span>
+                  <a href="mailto:solutions@velocelabs.ai" class="meta-link">solutions@velocelabs.ai</a>
+                </div>
+              </div>
+
+              <div class="meta-item">
+                <div class="meta-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                  </svg>
+                </div>
+                <div class="meta-content">
+                  <span class="meta-label">Enterprise & SOC2 Compliance</span>
+                  <a href="mailto:enterprise@velocelabs.ai" class="meta-link">enterprise@velocelabs.ai</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Elevated Form Card -->
+          <div class="contact-form-col">
+            <div class="form-card">
+              <div class="form-header">
+                <h3 class="form-title">Request Enterprise Demo</h3>
+                <p class="form-desc">Complete the details below and a solution architect will reach out within 2 hours.</p>
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <!-- Full Name -->
+                <div class="form-group">
+                  <label for="fullName" class="form-label">Full Name <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="text" id="fullName" name="fullName" class="form-input" placeholder="e.g. Sarah Connor" required autocomplete="name">
+                  </div>
+                  <span class="field-error" id="nameError">Please enter your name</span>
+                </div>
+
+                <!-- Work Email -->
+                <div class="form-group">
+                  <label for="workEmail" class="form-label">Work Email <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="email" id="workEmail" name="workEmail" class="form-input" placeholder="alex@company.com" required autocomplete="email">
+                  </div>
+                  <span class="field-error" id="emailError">Please enter a valid work email address</span>
+                </div>
+
+                <!-- Workflows / Interest Topic -->
+                <div class="form-group">
+                  <label for="topic" class="form-label">Primary Interest</label>
+                  <div class="input-wrapper select-wrapper">
+                    <select id="topic" name="topic" class="form-input form-select">
+                      <option value="engine-2">Veloce Engine 2.0 (High Throughput)</option>
+                      <option value="cognitive">Autonomous AI Agents (Cognitive)</option>
+                      <option value="pulse">Pulse Observability & Telemetry</option>
+                      <option value="enterprise">Private VPC / Enterprise Migration</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                  <label for="message" class="form-label">How can we assist your workflows? <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Tell us about your current stack, event volumes, or specific automation challenges..." required></textarea>
+                  </div>
+                  <span class="field-error" id="messageError">Please share a short message so we can route your request</span>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-action">
+                  <button type="submit" id="submitBtn" class="btn btn-primary btn-submit">
+                    <span class="btn-text">Submit Message</span>
+                    <svg class="btn-spinner" viewBox="0 0 24 24" fill="none">
+                      <circle class="spinner-track" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3"></circle>
+                      <path class="spinner-head" d="M12 2a10 10 0 0 1 10 10" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Privacy note -->
+                <p class="form-legal">
+                  By submitting, you agree to Veloce Labs' <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>. We never sell your personal data.
+                </p>
+
+                <!-- Feedback Toast Banner -->
+                <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       MINIMAL FOOTER (Deep Dark Surface #090D16)
+       ========================================================================= -->
+  <footer class="footer-section">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo" aria-label="Veloce Labs Home">
+            <div class="logo-mark">
+              <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
+                <rect width="28" height="28" rx="8" fill="url(#footer-logo-grad)"/>
+                <path d="M7 8.5L14 19.5L21 8.5" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11 8.5L14 13.5L17 8.5" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="footer-logo-grad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4F46E5"/>
+                    <stop offset="1" stop-color="#06B6D4"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="brand-text">Veloce <span class="brand-text-accent">Labs</span></span>
+          </a>
+          <p class="footer-motto">
+            Architecting the future of deterministic agentic automation and cloud resilience.
+          </p>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4 class="footer-heading">Platform</h4>
+            <ul class="footer-link-list">
+              <li><a href="#products">Veloce Flow</a></li>
+              <li><a href="#products">Veloce Cognitive</a></li>
+              <li><a href="#products">Veloce Pulse</a></li>
+              <li><a href="#">Edge Runtime</a></li>
+              <li><a href="#">Changelog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Company</h4>
+            <ul class="footer-link-list">
+              <li><a href="#team">About Leadership</a></li>
+              <li><a href="#achievements">Achievements</a></li>
+              <li><a href="#">Careers <span class="hiring-badge">We're hiring</span></a></li>
+              <li><a href="#">Security & Trust</a></li>
+              <li><a href="#">Press Kit</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Developers</h4>
+            <ul class="footer-link-list">
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">GitHub Open Source</a></li>
+              <li><a href="#">Status Page</a></li>
+              <li><a href="#">Community Discord</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Veloce Labs, Inc. All rights reserved. Built with precision for modern engineering teams.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security Whitepaper</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
